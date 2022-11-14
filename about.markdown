@@ -3,16 +3,20 @@ layout: page
 title: About
 permalink: /about/
 ---
+Hello there! My name is Asyraf, pronounce as [Ush-raf](https://translate.google.com.my/?sl=ms&text=Asyraf). I am a full-time Software Enginner at [Setel](setel.com). Graduated in Computer Science (Hons.) in Software Engineering from Multimedia University (MMU) Cyberjaya, Malaysia. I enjoy crafting functional software and love to work with challenging tasks. These are some of my he tech stacks:
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+- NodeJS
+- NestJS
+- MongoDB
+- Rabbit MQ
+- Apache Kafka
+- Docker
+- Git (Gitlab & Github)
+- PHP
+- Laravel
+- MySQL
+- VueJS
+- Redis
+- Ionic Framework
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
