@@ -9,13 +9,13 @@ This journey of bug fixing on AWS Lambda is a tricky one and there are a couple 
 
 1. AWS S3 bucket - a folder to receive the file to be processed
 2. AWS Lambda with Serverless framework - to trigger service endpoints upon detecting new file in AWS S3
-3. api-processor - a service with endpoints exposed to Serverless to be triggered and processing the file.
+3. Processor Service - a service with endpoints exposed to Serverless to be triggered and processing the file.
 
 ![diagram-1-aws-lambda](/assets/aws-lambda.png)
 
 I was working to add another endpoint to be triggered on the existing Serverless function. The expectation is once we place a new file in the bucket, the Serverless will trigger endpoint 1 and follow with triggering endpoint 2. There is a retry-mechanisms in place in that particular function. Let’s say if the endpoint responds with http error, the function will do another attempt to trigger again up until 3 attempts. 
 
-Unfortunately it doesn’t work as expected. I have ensured both of these endpoints work as expected. The endpoint was triggered 3 times and my first assumption was maybe the Serverless did not get a success response. But that’s not the case, and I spent quite some time trying different ways in my code in the api-processor to see any clues. I also monitor the logs in AWS Lambda and after quite some time, I noticed the same pattern where the Serverless function stopped at 6.01 seconds.
+Unfortunately it doesn’t work as expected. I have ensured both of these endpoints work as expected. The endpoint was triggered 3 times and my first assumption was maybe the Serverless did not get a success response. But that’s not the case, and I spent quite some time trying different ways in my code in the Processor Service to see any clues. I also monitor the logs in AWS Lambda and after quite some time, I noticed the same pattern where the Serverless function stopped at 6.01 seconds.
 
 I made a quick search on [StackOverflow][so-reference]{:target="_blank"}, and found out that there is a default timeout of 6 seconds in the Serverless function. This clears everything on why the function was stopped and proceeds with another attempt. So to solve the issue, there are 2 options:
 - Option 1 - Increase the Serverless function timeout.
