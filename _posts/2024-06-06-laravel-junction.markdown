@@ -31,16 +31,19 @@ To trigger the action method, you can submit a PUT request with this payload:
 - Method: PUT
 - Payload: `{ action: "sendNotification" }`
 
-2. Introduce consistent endpoint signatures and simplify endpoint definitions in route files. With single line `Junction::apiResource('users', 'UserController');` declared in the route file, we can always ensure that the signature of the endpoints are consistent. This will also make our route file more clean and not clutterred up with inconsistent endpoint names.
+By passing the `sendNotification` value to the `action` in the request payload, we can trigger the custom action that we have defined in the controller.
 
-3. Extensive support for filters, modifiers, and relations. The support for these abilities helps us to cater a complex use-case where sometimes it requires more than CRUD functions. Let's take datatable as an example where we want to allow filter with limit amount of results and order by ascending on name column. To do this, we can call the request as follow:
+2. **Introduce consistent endpoint signatures and simplify endpoint definitions in route files.** With a single line, `Junction::apiResource('users', 'UserController');`, declared in the route file, we can always ensure that the signatures of the endpoints are consistent. This will also make our route file cleaner and prevent it from being cluttered with inconsistent endpoint names.
+
+3. **Extensive support for filters, modifiers, and relations.** The support for these features helps us cater to complex use cases that require more than CRUD functions. For example, consider a datatable where we want to filter with a limited number of results and order by the ascending name column. To do this, we can call the request as follows:
 ```
 http://localhost/user?limit=10&orders[][column]=name,orders[][direction]=asc
 ```
+There are more keys supported for filters and modifiers, which you can refer to in the [README](https://github.com/weapnl/laravel-junction?tab=readme-ov-file#filters) in the package repository.
 
-4. Built-in support for pagination and validation.
+4. **Built-in support for pagination and validation.** The package provides pagination mechanisms along with simple pagination, which will not return the total amount if you need to handle large database tables.
 
-5. Integration with JS Junction for seamless implementation with any JavaScript frontend codebase.
+5. Integration with [JS Junction](https://github.com/weapnl/js-junction) for seamless implementation with any JavaScript frontend codebase. This allows us to easily consume APIs built with Laravel Junction.
 
 I hope this helps you and your team consider this tool or package, which can significantly boost the development process and allow you to focus more on delivering features that meet business needs.
 
