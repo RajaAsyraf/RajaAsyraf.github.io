@@ -45,7 +45,7 @@ http://localhost/user?limit=10&orders[][column]=name,orders[][direction]=asc
 ```
 There are more keys supported for filters and modifiers, which you can refer to in the [README](https://github.com/weapnl/laravel-junction?tab=readme-ov-file#filters) in the package repository.
 
-### 4. Built-in support for pagination and validation
+### 4. Built-in support for pagination
 The package comes with pagination built-in on `index` endpoint. This can be very handy if you are building a listing table with pagination. They also provides simple pagination, in case you need to handle large database tables. Here is the sample usage:
 ```
 http://localhost/user?paginate=25&page=1&page_for_id=1
