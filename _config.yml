@@ -21,7 +21,7 @@
 title: Raja Asyraf
 email: 
 description: >- # this means to ignore newlines until "baseurl:"
-  Hello there! This is a place for me to document my experiences and share my learning journey.
+  Sharing technical stuff in my journey of software development
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://rajaasyraf.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: rmasyraf
