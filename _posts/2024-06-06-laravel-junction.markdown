@@ -16,7 +16,9 @@ Now, let's dive deeper into why we need to `composer install` this package and s
 // routes/api.php
 Junction::apiResource('users', 'UserController');
 ```
-With this single line definition of `apiResource` in the route file, we already handle all of the REST API endpoints such as create, read, update, and delete (CRUD). These are the common endpoints that allow us to interact with the resource. Additionally, they have also included a special endpoint called `action` to trigger any custom actions.
+With this single line definition of `apiResource` in the route file, we already handle all of the REST API endpoints such as create, read, update, and delete (CRUD). These are the common endpoints that allow us to interact with the resource. If you need to perform any logic on before or after the `index()` endpoint, you can define that in `beforeIndex()` or `afterIndex()` methods. This applies to all CRUD methods.
+
+Additionally, they have also included a special endpoint called `action` to trigger any custom actions.
 
 ```
 // UserController.php
