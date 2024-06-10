@@ -22,3 +22,5 @@ Hello there! My name is Asyraf, pronounced as [Ush-raf](https://translate.google
 - Ionic Framework
 
 ![csm-badge](/assets/scm-badge.png){: style="width:150px;" }
+
+[Certified ScrumMaster® (CSM®)](https://bcert.me/sqpvnnojb)
