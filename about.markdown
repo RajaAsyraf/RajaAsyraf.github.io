@@ -15,7 +15,7 @@ Hello there! My name is Asyraf, pronounced as [Ush-raf](https://translate.google
 - MySQL
 - MongoDB
 - Redis
-- Rabbit MQ
+- RabbitMQ
 - Git (Gitlab & Github)
 - Docker
 - Kubernetes
