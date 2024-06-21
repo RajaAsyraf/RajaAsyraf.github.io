@@ -4,3 +4,5 @@
 
 layout: home
 ---
+
+![diagram-1-aws-lambda](/assets/tetris.gif)
