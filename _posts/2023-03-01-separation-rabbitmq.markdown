@@ -1,4 +1,9 @@
-# Separation of RabbitMQ Event Queue
+---
+layout: post
+title:  "Separation of RabbitMQ Event Queue"
+date:   2023-03-01 01:22:00 +0800
+categories: initiative
+---
 
 RabbitMQ is a message broker that allows different applications to communicate with each other. It uses a message queue to store messages and delivers them to the appropriate recipient. In some cases, it is necessary to separate the event queue from the other queues to ensure that the events are processed in a timely and efficient manner. In this article, we will discuss the separation of RabbitMQ event queue and its benefits.
 
