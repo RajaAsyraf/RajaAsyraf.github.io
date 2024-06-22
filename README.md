@@ -1,4 +1,4 @@
-## Static Blog using Jekyll
+## Static Website using Jekyll
 This repository is a generated static website using Jekyll. I will be using this to publish all my contents for blogging.
 
 ## Installation (Local)
