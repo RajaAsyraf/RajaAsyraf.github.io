@@ -5,4 +5,4 @@
 layout: home
 ---
 
-![diagram-1-aws-lambda](/assets/tetris.gif)
+![diagram-1-aws-lambda](/assets/tetris-name.gif)
